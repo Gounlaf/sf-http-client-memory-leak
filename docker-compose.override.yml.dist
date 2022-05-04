@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  debug:
+    volumes:
+      - .:/opt/app
+    environment:
+      MEMPROF_PROFILE: 'native'
+      METRICS_PUSH_GATEWAY: 'http://metrics-gateway:9091'
+
+  metrics-gateway:
+    ports:
+      - "9091:9091"

@@ -1,0 +1,9 @@
+.git*
+.editorconfig
+.env.example
+Dockerfile*
+docker-compose*
+README*
+.phpunit*
+.k8s
+.idea
